@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    height: 20px;
+    width: 100vw;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    position: fixed;
+    z-index: 2;
+    padding: 0 20px;
+    margin-top: 10px;
+    
+}
+
+.nav-gauche {
+    flex: 1;
+    color: #FFEE02;
+    
+}
+#Logo-Cristian {
+    color: #FFEE02; 
+    font-family: "Juana Regular"; 
+    font-size: 2vh;
+    text-decoration: none;
+    
+
+    
+}
+
+
+
+
+.nav-milieu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-left:2.1%;
+   
+}
+
+.Home, .About, .Music {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7vh;
+    font-family: "Roboto";
+    margin: 0 10px;
+}
+.Music:hover {
+    color: #FFEE02;
+    
+}
+.Home:hover {  
+    color: #FFEE02;
+   
+}
+.About:hover {
+    color: #FFEE02;
+}
+
+
+.nav-droite {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+  
+}
+
+
+.twitter, .facebook, .instagram {
+    margin-left: 16px;
+    width: 1.1vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+.Page1 {
+    position:relative;
+    display: grid;  
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(10,1fr);
+    height: 100vh;
+    width: 100vw;
+}
+#img1-div {
+    grid-column: 1/19;
+    grid-row: 1/19;
+}
+
+
+#Fond-page1 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+#Titre {
+    color: #FFEE02;
+    position: absolute;
+    grid-row: 4/5;
+    grid-column: 6/6;
+    font-size: 9vw;
+    font-family: "FSP DEMO - Juana Medium"; 
+
+}
+#Page2 {
+    background-color: #261C16;
+    height: 100vh;
+    width: 100vw;
+  
+}
+.section2 {
+    display: grid;  
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(15,1fr);
+
+}
+#titre {
+    grid-row: 2/5;
+    grid-column: 2/5;
+    color: white;
+    font-size: 4vh;
+    font-family: "FSP DEMO - Juana Medium"; 
+    margin-top: 5%;
+   
+}
+#img-christian {
+    grid-row: 4/16;
+    grid-column: 1/8;
+    
+}
+#img-christian-about {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+#sous-titre-page2  {
+    grid-row: 4/10;
+    grid-column: 9/13;
+    color: #FFEE02; 
+    font-family: "Juana Regular"; 
+    font-size: 4vh;
+}
+#Premier-paragraphe {
+    grid-row: 6/10;
+    grid-column: 9/14;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+}
+#Deuxieme-paragraphe {
+    grid-row: 9/10;
+    grid-column: 9/14;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    margin-top: -6%;
+}
+#play {
+    height: 1.5vh;
+    position: fixed;
+    top: 94%;
+    right: 4.7%;
+    cursor: pointer;
+    margin-top: 6px;
+    z-index: 9;
+   
+   
+
+  
+}
+#pause {
+  height: 2vh;
+  position: fixed;
+  top: 94.4%;
+  right: 2.7%;
+  cursor: pointer;
+  z-index: 9;
+   
+   }
+#Page3 {
+    display: grid;  
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(24,1fr);
+    background-color: #261C16;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+#img-parallels {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#img-parallels-div {
+    grid-row: 3/26;
+	grid-column: 9/30;
+}
+
+
+
+#Nom-album {
+    grid-row: 6/6;
+    grid-column: 2/2;
+    color: #FFEE02; 
+    font-family: "Juana Regular"; 
+    font-size: 4vh;
+    cursor: pointer;
+
+}
+#Parsifal {
+    grid-row: 9/9;
+    grid-column: 2/2;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+  
+    
+}
+
+#Parsifal:hover{
+    color: #FFEE02;
+}
+
+#Parsifal-temps {
+    grid-row: 9/9;
+    grid-column: 4/4;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white; 
+}
+#Moldau {
+    grid-row: 10/10;
+    grid-column: 2/2;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+}
+#Moldau:hover{
+    color: #FFEE02;
+}
+#Moldau-temps {
+    grid-row: 10/10;
+    grid-column: 4/4;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white; 
+
+}
+#Dir-Jehova {
+    grid-row: 11/11;
+    grid-column: 2/2;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+}
+#Dir-Jehova:hover{
+    color: #FFEE02;
+}
+#Dir-Jehova-temps {
+    grid-row: 11/11;
+    grid-column: 4/4;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white; 
+
+}
+#Gavotte {
+    grid-row: 12/12;
+    grid-column: 2/2;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+
+}
+#Gavotte:hover{
+    color: #FFEE02;
+}
+
+#Gavotte-temps {
+    grid-row: 12/12;
+    grid-column: 4/4;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white; 
+
+}
+#Nocturne {
+    grid-row: 13/13;
+    grid-column: 2/2;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+}
+#Nocturne:hover{
+    color: #FFEE02;
+}
+
+#Nocturne-temps {
+    grid-row: 13/13;
+    grid-column: 4/4;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+
+}
+#Nadir {
+    grid-row: 9/9;
+    grid-column: 5/5;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+}
+#Nadir:hover{
+    color: #FFEE02;
+}
+#Nadir-temps {
+    grid-row: 9/9;
+    grid-column: 7/7;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+
+}
+#Pastoral {
+    grid-row: 10/10;
+    grid-column: 5/5;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+
+} 
+#Pastoral:hover{
+    color: #FFEE02;
+}
+#Pastoral-temps {
+    grid-row: 10/10;
+    grid-column: 7/7;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+
+
+}
+#Fate {
+    grid-row: 11/11;
+    grid-column: 5/5;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+
+}
+#Fate:hover{
+    color: #FFEE02;
+}
+#Fate-temps {
+    grid-row: 11/11;
+    grid-column: 7/7;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+
+
+
+}
+#Freiyheit {
+    grid-row: 12/12;
+    grid-column: 5/5;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+}
+#Freiyheit:hover{
+    color: #FFEE02;
+}
+#Freiyheit-temps {
+    grid-row: 12/12;
+    grid-column: 7/7;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+
+
+}
+#Funebre {
+    grid-row: 13/13;
+    grid-column: 5/5;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+
+}
+#Funebre:hover{
+    color: #FFEE02;
+}
+
+#Funebre-temps {
+    grid-row: 13/13;
+    grid-column: 7/7;
+    font-family: "Roboto";
+    font-size: 1.7vh;
+    color: white;
+
+}
+.Playliste-deplacement {
+    margin-top: 22%;
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+  
+
+
